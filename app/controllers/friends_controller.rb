@@ -3,7 +3,7 @@ class FriendsController < ApplicationController
   before_action :authenticate_user!
   # GET /friends or /friends.json
   def index
-    @friends = Friend.where(user_id: current_user.id).order(name: :asc)
+    @friends = Friend.where(user_id: current_user.id).order(first_name: :asc)
   end
 
   # GET /friends/1 or /friends/1.json
