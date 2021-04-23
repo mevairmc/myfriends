@@ -10,11 +10,7 @@
         <li class="nav-item">
           <%= link_to 'About', home_about_path, class:"nav-link" %>
         </li>
-        <li class="nav-item">
-          <%= link_to 'Friends', friends_path, class:"nav-link" %>
-        </li>
         <!--Devise methods-->
-
         <% if user_signed_in? %>
           <li class="nav-item">
             <%= link_to 'New Friend', new_friend_path, class:"nav-link" %>
